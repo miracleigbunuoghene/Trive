@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --color1: black;
+  --color2: white;
+  --color3: gold;
+  --fontSize1: 60px;
+  --fontSize2: 50px;
+  --fontSize3: 40px;
+  --fontSize4: 36px;
+  --fontSize5: 30px;
+  --fontSize6: 20px;
+  --fontSize7: 18px;
+  --fontSize8: 16px;
+  --fontFamily1: "Montserrat", sans-serif;
+  --fontFamily2: "Poppins", sans-serif;
+  --fontFamily3: "Roboto", sans-serif;
+  --sectionPadding: 70px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fontFamily2);
+}
+
+.container {
+  width: 93%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* responsive images */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+/* section heading */
+.sectionHeading {
+  text-transform: uppercase;
+  font-size: var(--fontSize3);
+  font-family: var(--fontFamily2);
+}
+
+/* section text */
+.sectionText {
+  line-height: 1.8;
+}
+
+/* flex class*/
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* header and navbar start */
+header {
+  background-color: transparent;
+  backdrop-filter: blur(40px);
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+nav .links {
+  display: flex;
+  gap: 20px;
+}
+nav .links a {
+  text-decoration: none;
+  color: var(--color1);
+  font-family: var(--fontFamily2);
+  transition: all 1s ease-in-out;
+}
+
+nav .links a:hover {
+  color: var(--color3);
+}
+
+nav .hambuger {
+  color: white;
+  cursor: pointer;
+  font-size: var(--fontSize5);
+  display: none;
+}
+
+.button .btn {
+  margin: 10px;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  background-color: var(--color3);
+}
+
+.button .btn a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: var(--fontFamily2);
+  font-weight: 800;
+}
+/* header and navbar end */
